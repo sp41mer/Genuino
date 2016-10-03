@@ -1,0 +1,39 @@
+#first_screen{
+    background-image: url("../img/screen1_bg.png");
+    background-size: 100% 100%;
+
+}
+#second_screen{
+    background-image: url("../img/screen2_bg.png");
+    background-size: 100% 100%;
+
+}
+#third_screen{
+    background-image: url("../img/screen3_bg.png");
+    background-size: 100% 100%;
+
+}
+#fourth_screen{
+    background-image: url("../img/screen4_bg.png");
+    background-size: 100% 100%;
+
+}
+#first_screen .container{
+    margin-top: 50px;
+    min-height: 550px;
+}
+#second_screen .container{
+    min-height: 570px;
+}
+#third_screen .container{
+    min-height: 570px;
+    background-color: yellow;
+}
+#fourth_screen .container{
+    min-height: 570px;
+    background-color: forestgreen;
+}
+#fith_screen .container{
+    min-height: 570px;
+    background-color: #8b3479;
+}
