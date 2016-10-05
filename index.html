@@ -6,6 +6,8 @@
         GENUINO Handcraft
     </title>
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -17,38 +19,114 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a>О бренде</a></li>
-                    <li><a>Индивидуальный подход</a></li>
-                    <li><a>Пошив на заказ</a></li>
-                    <li><a>Контакты</a></li>
-                    <li><a>Оставить заявку</a></li>
+                    <li><a class = "js__navbar__button" id = "js__navbar__about" href = "#first_screen">О бренде</a></li>
+                    <li><a class = "js__navbar__button" id = "js__navbar__individual" href = "#second_screen">Индивидуальный подход</a></li>
+                    <li><a class = "js__navbar__button" id = "js__navbar__order" href = "#third_screen">Пошив на заказ</a></li>
+                    <li><a class = "js__navbar__button" id = "js__navbar__contacts" href="#fourth_screen">Контакты</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal">Оставить заявку</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <section id = "first_screen">
         <div class = "container">
-            <div class = "row">
-                <div class = "col-md-4 col-sm-12">
-                    <h4>Узнайте больше о том, как мы создаем искусство</h4>
-                    <ul>
-                        <li>Персональное снятие мерок с клиентов</li>
-                        <li>Индивидуальный пошив каждой пары</li>
-                        <li>3 мастера с 17-летним опытом работы</li>
-                        <li>Изготовление в течение 14-16 дней</li>
-                    </ul>
+            <div class = "row aboutus__row">
+                <div class = "col-md-5 col-sm-12 about_us__div">
+                    <h4 class = "about_us__div__header" >Узнайте больше о том, как мы создаем искусство</h4>
+                    <img src = "img/screen1_underline.png"/>
+                    <p>
+                        <span class = "aboutus__div__list__header">Персональное снятие мерок с клиентов</span><br>
+                        Выезд специалиста в любую точку Москвы и МО в любое удобное для Вас время.
+                    </p>
+                    <p>
+                        <span class = "aboutus__div__list__header">Индивидуальный пошив каждой пары</span><br>
+                        С применением технологии bespoke с возможностью выполнения любых желаний для каждой пары.
+                    </p>
+                    <p>
+                        <span class = "aboutus__div__list__header">3 мастера с 17-летним опытом работы</span><br>
+                        Собственное производство в Москве, выпустившее за карьеру более 10 000 пар обуви.
+
+                    </p>
+                    <p>
+                        <span class = "aboutus__div__list__header">Изготовление в течение 14-16 дней</span><br>
+                        Которые начинаются с первой секунды после приема заявки в любом удобном для Вас месте.
+                    </p>
                 </div>
-                <div class = "col-md-4 col-md-offset-4 col-sm-12">
-                    <button>Узнать как мы работаем</button>
+                <div class = "col-md-4 col-md-offset-3 col-sm-12">
+                    <button type = "button" class="about_us__CTA btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Узнать как мы работаем</button>
                 </div>
             </div>
-            <div class = "row"></div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Оставь заявку, пидор</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Сука пожалуйста</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
     <section id = "second_screen">
         <div class = "container">
-            <div class = "row"></div>
-            <div class = "row"></div>
+            <div class = "row">
+                <h4>
+                    Готовая пара обуви, заботливо сшитая специально для вашей стопы
+                </h4>
+            </div>
+            <div class="row four_steps_result">
+                <div class = "individual__steps__div">
+                    <div class="div__border__down">
+                        4 шага до идеального результата
+                    </div>
+                    <div class = "row four_steps__margin">
+                        <div class = "col-md-6 col-sm-12">
+                            <ol class="four_steps__list_style">
+                                <li class="four_steps__li__styles">
+                                    <span class="ol__circle__radius">
+                                        <i class="i__white__circle">1</i>
+                                    </span>Обслуживание и выбор моделей
+                                </li>
+                                <li class="four_steps__li__styles">
+                                    <span class="ol__circle__radius">
+                                        <i class="i__white__circle">2</i>
+                                    </span>Снятие мерок индвидуально под Вашу стопу
+                                </li>
+                                <li class="four_steps__li__styles">
+                                    <span class="ol__circle__radius">
+                                        <i class="i__white__circle">3</i>
+                                    </span>Основная работа над Вашей парой
+                                </li>
+                                <li class="four_steps__li__styles">
+                                    <span class="ol__circle__radius">
+                                        <i class="i__white__circle">4</i>
+                                    </span>Ваша индивидуальная пара обуви
+                                </li>
+                            </ol>
+                        </div>
+                        <div class ="img__styles col-md-6 col-sm-12">
+                            <div class="img__styles__div">
+                                <img src="img/second_screen/1.png" alt=""/>
+                            </div>
+                            <div>
+                                Наш стилист, вы и заказчик
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class = "row"></div>
         </div>
     </section>

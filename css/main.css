@@ -3,11 +3,82 @@
     background-size: 100% 100%;
 
 }
+.first_screen__aboutus__list {
+    list-style: none;
+}
+.about_us__row > *:last-child {
+    vertical-align: bottom;
+}
+.about_us__CTA{
+    margin-top:450px;
+}
+.about_us__div{
+    padding-bottom: 20px;
+}
+.about_us__div p{
+    padding-left: 30px;
+    border-left: 2px solid black;
+}
+.about_us__div__header{
+    margin-top: 230px;
+}
+
 #second_screen{
+    text-align: center;
+    color: white;
     background-image: url("../img/screen2_bg.png");
     background-size: 100% 100%;
 
 }
+
+.div__border__down {
+    font-size: 24px;
+    width: 50%;
+    margin: auto;
+    border-bottom: 4px solid green;
+}
+
+.four_steps_result {
+    border: 1px solid white;
+}
+
+.four_steps__margin {
+    margin-top: 20px;
+}
+
+.four_steps__list_style {
+    list-style: none;
+    border-right: 4px solid green;
+}
+
+.four_steps__li__styles {
+    text-align: left;
+    padding: 20px;
+}
+
+.i__white__circle {
+    border-radius: 50%;
+    color: black;
+    padding: 12px 15px;
+    background-color: white;
+}
+
+.ol__circle__radius:hover {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: black;
+    padding: 16px 0 16px 4px;
+    margin-right: 10px;
+}
+
+.img__styles {
+    text-align: center;
+}
+
+.img__styles__div {
+    margin: 10px 0;
+}
+
 #third_screen{
     background-image: url("../img/screen3_bg.png");
     background-size: 100% 100%;
