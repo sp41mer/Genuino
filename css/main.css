@@ -1,3 +1,6 @@
+body{
+    font-family: 'Playfair Display', serif !important;
+}
 #first_screen{
     background-image: url("../img/screen1_bg.png");
     background-size: 100% 100%;
@@ -31,11 +34,30 @@
 
 }
 
-.div__border__down {
+.second_screen__header{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.second_screen__header__logo{
+    float: left;
+}
+.second_screen__header__logo_img{
+    height: 100px;
+}
+.second_screen__header__text{
+    float: right;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.second_screen__header__span{
+
+}
+
+.div__border__down_span{
     font-size: 24px;
-    width: 50%;
-    margin: auto;
-    border-bottom: 4px solid green;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
 }
 
 .four_steps_result {
@@ -47,19 +69,20 @@
 }
 
 .four_steps__list_style {
+    padding-left: 0px;
     list-style: none;
-    border-right: 4px solid green;
+    border-right: 1px solid white;
 }
 
 .four_steps__li__styles {
     text-align: left;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
 .i__white__circle {
     border-radius: 50%;
     color: black;
-    padding: 12px 15px;
+    padding: 8px 14px;
     background-color: white;
 }
 
@@ -67,10 +90,12 @@
     border: 1px solid white;
     border-radius: 50%;
     color: black;
-    padding: 16px 0 16px 4px;
+    padding: 12px 0 12px 4px;
     margin-right: 10px;
 }
-
+.four_steps__name{
+    font-size: 12px;
+}
 .img__styles {
     text-align: center;
 }
@@ -78,16 +103,192 @@
 .img__styles__div {
     margin: 10px 0;
 }
+.img__styles__div img{
+    height: 150px;
+}
+.second_screen__last_row{
+    margin-top: 30px;
+}
+.second_screen__CTA{
+    text-align: left;
+}
+.second_screen__CTA_header__span{
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+.second_screen__CTA_text{
+    margin-top: 15px;
+    font-size: 12px;
+}
 
 #third_screen{
     background-image: url("../img/screen3_bg.png");
     background-size: 100% 100%;
 
 }
+
+.fivesteps{
+    min-height: 20px;
+    margin-top: 10px;
+    background-color: #cccccc;
+}
+
+.fivesteps_header{
+    font-size: 18px;
+    padding: 7px 15px;
+}
+.fivesteps_header__span__active{
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+.fivesteps_info{
+    display: none;
+    font-size: 12px;
+    padding: 10px 15px;
+}
+.fivesteps_info__p{
+
+}
+.third_screen__CTA{
+    vertical-align: bottom;
+}
+
+.fivesteps__boots__img{
+    height: 350px;
+    margin-left: 50px;
+}
+
+
 #fourth_screen{
     background-image: url("../img/screen4_bg.png");
     background-size: 100% 100%;
 
+}
+.fourth_screen__header{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.fourth_screen__big_header{
+    padding-bottom: 10px;
+}
+.fourth_screen__big_header__span{
+    font-size: 22px;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 12px;
+}
+.fourth_screen__small_header{
+    padding-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+.fourth_screen__small_header__span{
+    margin-top: 10px;
+}
+
+.fourth_screen__second_row{
+    margin-top: 40px;
+}
+
+.fourth_screen__card_header{
+    min-height: 50px;
+    background-color: #fcfefe;
+    text-align: center;
+}
+.fourth_screen__card_header__header_span{
+    padding:3px;
+    border-bottom: 1px solid black;
+}
+.fourth_screen__card_header__content{
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+
+.fourth_screen__card_content{
+    min-height: 150px;
+    background-color: #c5c5c8;
+    text-align: center;
+}
+.fourth_screen__card_content__price{
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.fourth_screen__card_content__text{
+    padding-bottom: 25px;
+    font-size: 12px;
+}
+
+.fourth_screen__card_content__CTA{
+    padding-bottom: 10px;
+
+}
+
+.fourth_screen__CTA{
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+}
+.fourth_screen__CTA_header{
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.fourth_screen__CTA_buttons{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+.fourth_screen__CTA_buttons button{
+    margin: auto;
+}
+
+.fifth_screen__thanks{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+.fifth_screen__thanks_span{
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.fifth_screen__excuse{
+    text-align: center;
+    font-size: 20px;
+}
+.fifth_screen__excuse_span{
+
+}
+.fifth_screen__correct{
+    margin-top: 30px;
+    text-align: center;
+}
+.fifth_screen__correct_span{
+
+}
+.fifth_screen__CTA{
+    margin-top: 30px;
+}
+.fifth_screen__footer{
+    margin-top: 30px;
+}
+.fifth_screen__footer__img{
+    float: left;
+}
+.fifth_screen__footer__img img{
+    height: 100px;
+}
+.fifth_screen__footer__main{
+    margin-left: 20px;
+    margin-top: 30px;
+    float: left;
+}
+.fifth_screen__footer__sub{
+    margin-left: 20px;
+    float: left;
 }
 #first_screen .container{
     margin-top: 50px;
@@ -98,13 +299,14 @@
 }
 #third_screen .container{
     min-height: 570px;
-    background-color: yellow;
 }
 #fourth_screen .container{
     min-height: 570px;
-    background-color: forestgreen;
 }
-#fith_screen .container{
+#fifth_screen{
+    background-color: #151516;
+    color: white;
+}
+#fifth_screen .container{
     min-height: 570px;
-    background-color: #8b3479;
 }
