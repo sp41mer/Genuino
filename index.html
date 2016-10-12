@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class = "navbar navbar-default navbar-fixed-top">
+    <nav id = "genuino__nav" class = "navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class = "navbar-header">
                 <a class="navbar-brand" href="#">GENUINO</a>
@@ -24,7 +24,13 @@
                     <li><a class = "js__navbar__button" id = "js__navbar__individual" href = "#second_screen">Индивидуальный подход</a></li>
                     <li><a class = "js__navbar__button" id = "js__navbar__order" href = "#third_screen">Пошив на заказ</a></li>
                     <li><a class = "js__navbar__button" id = "js__navbar__contacts" href="#fourth_screen">Контакты</a></li>
-                    <li><a data-toggle="modal" data-target="#myModal">Оставить заявку</a></li>
+                    <li>
+                        <a data-toggle="modal" data-target="#myModal">
+                            <span class = "navbar__CTA_span">
+                                Оставить заявку
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -33,6 +39,13 @@
         <div class = "container">
             <div class = "row aboutus__row">
                 <div class = "col-md-5 col-sm-12 about_us__div">
+                    <h4 class = "about_us_div_main_header">
+                        GENUINO HandCraft:
+                    </h4>
+                    <p class = "about_us_div_main_p">
+                        индивидуальный пошив<br>
+                        классической мужской обуви
+                    </p>
                     <h4 class = "about_us__div__header" >Узнайте больше о том, как мы создаем искусство</h4>
                     <img src = "img/screen1_underline.png"/>
                     <p>
@@ -53,8 +66,28 @@
                         Которые начинаются с первой секунды после приема заявки в любом удобном для Вас месте.
                     </p>
                 </div>
-                <div class = "col-md-4 col-md-offset-3 col-sm-12">
-                    <button type = "button" class="about_us__CTA btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Узнать как мы работаем</button>
+                <div class = "col-md-6 col-md-offset-1 col-sm-12">
+                    <form>
+                        <div class = "row first_screen__form__first_row" align="center">
+                            <span class = "first_screen__form__first_row__span">
+                                Для тех кто знает о комфорте все
+                            </span>
+                        </div>
+                        <div class = "row first_screen__form__second_row ">
+                            <div class = "col-md-6" align = "center">
+                                <input class = "first_screen__form__second_row__input" placeholder="Имя" type="text">
+                            </div>
+                            <div class = "col-md-6" align = "center">
+                                <input class = "first_screen__form__second_row__input" placeholder="Телефон" type="text">
+                            </div>
+                        </div>
+                        <div class = "row first_screen__form__third_row" align = "center">
+                            <button type = "submit" data-toggle="modal" data-target="#myModal" class="about_us__CTA btn genuino__big_button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
                 </div>
             </div>
             <!-- Modal -->
@@ -104,25 +137,25 @@
                     <div class = "row four_steps__margin">
                         <div class = "col-md-6 col-sm-12">
                             <ol class="four_steps__list_style">
-                                <li class="four_steps__li__styles">
+                                <li class="four_steps__li__styles" data-img = "1">
                                     <span class="ol__circle__radius">
                                         <i class="i__white__circle">1</i>
                                     </span>
                                     <span class = "four_steps__name">Обслуживание и выбор моделей</span>
                                 </li>
-                                <li class="four_steps__li__styles">
+                                <li class="four_steps__li__styles" data-img = "2">
                                     <span class="ol__circle__radius">
                                         <i class="i__white__circle">2</i>
                                     </span>
                                     <span class = "four_steps__name">Снятие мерок индвидуально под Вашу стопу</span>
                                 </li>
-                                <li class="four_steps__li__styles">
+                                <li class="four_steps__li__styles" data-img = "3">
                                     <span class="ol__circle__radius">
                                         <i class="i__white__circle">3</i>
                                     </span>
                                     <span class = "four_steps__name">Основная работа над Вашей парой</span>
                                 </li>
-                                <li class="four_steps__li__styles">
+                                <li class="four_steps__li__styles" data-img = "4">
                                     <span class="ol__circle__radius">
                                         <i class="i__white__circle">4</i>
                                     </span>
@@ -132,7 +165,7 @@
                         </div>
                         <div class ="img__styles col-md-6 col-sm-12">
                             <div class="img__styles__div">
-                                <img src="img/second_screen/1.png" alt=""/>
+                                <img сlass = "img__styles__div_img" src="img/second_screen/1.png" alt=""/>
                             </div>
                             <div>
                                 <span>Наш стилист и Вы, как заказчик, обсуждаете
@@ -159,7 +192,7 @@
                             </div>
                         </div>
                         <div class = "col-sm-4">
-                            <button type = "button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                            <button type = "button" class="genuino__big_button btn" data-toggle="modal" data-target="#myModal">
                                 Что отличает нас?
                             </button>
                         </div>
@@ -187,8 +220,9 @@
             <div class = "row">
                 <div class = "third_screen__fivesteps col-md-4 col-md-offset-2 col-sm-12">
                     <div class = "fivesteps">
-                        <div class = "fivesteps_header">
-                            <span class = "fivesteps_header__span">1. Гарантия качества</span>
+                        <div class = "fivesteps_header" data-number = '1'>
+                            <span class = "fivesteps_header__span fivesteps_header__span__active">1. Гарантия качества</span>
+                            <img src="img/screen3_question.png" class = "fivesteps_header__img">
                         </div>
                         <div class = "fivesteps_info">
                             <p class = "fivesteps_info__p">
@@ -198,8 +232,9 @@
                         </div>
                     </div>
                     <div class = "fivesteps">
-                        <div class = "fivesteps_header">
+                        <div class = "fivesteps_header" data-number = '2'>
                             <span class = "fivesteps_header__span">2. Индивидуальный дизайн</span>
+                            <img src="img/screen3_question.png" class = "fivesteps_header__img">
                         </div>
                         <div class = "fivesteps_info">
                             <p class = "fivesteps_info__p">
@@ -209,8 +244,9 @@
                         </div>
                     </div>
                     <div class = "fivesteps">
-                        <div class = "fivesteps_header">
+                        <div class = "fivesteps_header" data-number = '3'>
                             <span class = "fivesteps_header__span">3. Эксклюзивные материалы</span>
+                            <img src="img/screen3_question.png" class = "fivesteps_header__img">
                         </div>
                         <div class = "fivesteps_info">
                             <p class = "fivesteps_info__p">
@@ -220,8 +256,9 @@
                         </div>
                     </div>
                     <div class = "fivesteps">
-                        <div class = "fivesteps_header">
+                        <div class = "fivesteps_header" data-number = '4'>
                             <span class = "fivesteps_header__span">4. Ручная работа</span>
+                            <img src="img/screen3_question.png" class = "fivesteps_header__img">
                         </div>
                         <div class = "fivesteps_info">
                             <p class = "fivesteps_info__p">
@@ -231,8 +268,9 @@
                         </div>
                     </div>
                     <div class = "fivesteps">
-                        <div class = "fivesteps_header">
+                        <div class = "fivesteps_header" data-number = '5'>
                             <span class = "fivesteps_header__span">5. Первоклассный сервис</span>
+                            <img src="img/screen3_question.png" class = "fivesteps_header__img">
                         </div>
                         <div class = "fivesteps_info">
                             <p class = "fivesteps_info__p">
@@ -246,10 +284,35 @@
                 </div>
                 <div class = "col-md-4 col-sm-12">
                     <img class = "fivesteps__boots__img"src="img/screen3_boot.png">
+                    <img src = "img/circles/1.png" data-number = '1' class = "fivesteps__boots__img__circle" style = "
+                        position: absolute;
+                        top: 12px;
+                        left: 80px;
+                    ">
+                    <img src = "img/circles/2.png" data-number = '2' class = "fivesteps__boots__img__circle" style = "
+                        position: absolute;
+                        top: 10px;
+                        left: 215px;
+                    ">
+                    <img src = "img/circles/3.png" data-number = '3' class = "fivesteps__boots__img__circle" style = "
+                        position: absolute;
+                        top: 120px;
+                        left: 42px;
+                    ">
+                    <img src = "img/circles/4.png" data-number = '4' class = "fivesteps__boots__img__circle" style = "
+                        position: absolute;
+                        top: 280px;
+                        left: 210px;
+                    ">
+                    <img src = "img/circles/5.png" data-number = '5' class = "fivesteps__boots__img__circle" style = "
+                        position: absolute;
+                        top: 120px;
+                        left: 380px;
+                    ">
                 </div>
             </div>
             <div class = "row" align = "center">
-                <button type = "button" class="third_screen__CTA btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Выбрать пару</button>
+                <button type = "button" class="third_screen__CTA btn genuino__big_button" data-toggle="modal" data-target="#myModal">Выбрать пару</button>
             </div>
         </div>
     </section>
@@ -291,7 +354,7 @@
                             методы крепления - GoodYear Welt.
                         </div>
                         <div class="fourth_screen__card_content__CTA">
-                            <button class = "fourth_screen__card_content__CTA_button btn btn-info">
+                            <button data-toggle="modal" data-target="#myModal" class = "fourth_screen__card_content__CTA_button btn genuino__small_button">
                                 Оставить заявку
                             </button>
                         </div>
@@ -318,7 +381,7 @@
                             методы крепления - GoodYear Welt.
                         </div>
                         <div class="fourth_screen__card_content__CTA">
-                            <button class = "fourth_screen__card_content__CTA_button btn btn-info">
+                            <button data-toggle="modal" data-target="#myModal" class = "fourth_screen__card_content__CTA_button btn genuino__small_button">
                                 Оставить заявку
                             </button>
                         </div>
@@ -345,7 +408,7 @@
                             методы крепления - GoodYear Welt.
                         </div>
                         <div class="fourth_screen__card_content__CTA">
-                            <button class = "fourth_screen__card_content__CTA_button btn btn-info">
+                            <button data-toggle="modal" data-target="#myModal" class = "fourth_screen__card_content__CTA_button btn genuino__small_button">
                                 Оставить заявку
                             </button>
                         </div>
@@ -372,7 +435,7 @@
                             методы крепления - GoodYear Welt.
                         </div>
                         <div class="fourth_screen__card_content__CTA">
-                            <button class = "fourth_screen__card_content__CTA_button btn btn-info">
+                            <button data-toggle="modal" data-target="#myModal" class = "fourth_screen__card_content__CTA_button btn genuino__small_button">
                                 Оставить заявку
                             </button>
                         </div>
@@ -393,11 +456,11 @@
             </div>
             <div class = "row fourth_screen__CTA_buttons">
                 <div class = "col-md-6 col-md-offset-3">
-                    <button class = "btn btn-info">
+                    <button data-toggle="modal" data-target="#myModal" class = "btn genuino__big_button">
                         Задайте вопрос
                     </button>
                     ИЛИ
-                    <button class = "btn btn-info">
+                    <button class = "btn genuino__big_button">
                         Позвоните нам
                     </button>
                 </div>
@@ -425,7 +488,7 @@
                         </span>
                     </div>
                     <div class = "fifth_screen__CTA" align="center">
-                        <button class = "btn btn-info">
+                        <button data-toggle="modal" data-target="#myModal" class = "btn genuino__big_button">
                             Написать нам
                         </button>
                     </div>
