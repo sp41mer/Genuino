@@ -18,11 +18,23 @@ body{
     padding: 5px 10px !important;
     background-color: #fcfefe;
 }
-#first_screen{
-    background-image: url("../img/screen1_bg.png");
-    background-size: 100% 100%;
-
+@media (max-width: 998px) {
+    .about_us__text{
+        display: none;
+    }
+    #first_screen{
+        background-image: url("../img/screen1_small_bg.png");
+        background-size: 100% 100%;
+    }
 }
+@media (min-width: 999px){
+    #first_screen{
+        background-image: url("../img/screen1_bg.png");
+        background-size: 100% 100%;
+
+    }
+}
+
 .first_screen__aboutus__list {
     list-style: none;
 }
@@ -37,6 +49,11 @@ body{
 }
 
 .about_us__CTA{
+}
+@media (max-width: 998px){
+    .about_us__div{
+        text-align: center;
+    }
 }
 .about_us__div{
     padding-bottom: 20px;
@@ -53,8 +70,18 @@ body{
 .about_us__div__header{
     /*margin-top: 230px;*/
 }
-.first_screen__form__first_row{
-    margin-top: 380px;
+@media (max-width: 998px){
+    .first_screen__form__first_row{
+        margin-top: 30px;
+    }
+    .first_screen__form__third_row{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 999px){
+    .first_screen__form__first_row{
+        margin-top: 380px;
+    }
 }
 .first_screen__form__first_row__span{
     display: inline-block;
@@ -72,7 +99,7 @@ body{
     border: 1px solid white;
     background-color: gray;
     color: black;
-
+    margin-bottom: 5px;
 }
 .first_screen__form__second_row__input::-moz-placeholder {  /* Firefox 19+ */
     color: black;
@@ -80,6 +107,7 @@ body{
 .first_screen__form__second_row__input::-webkit-input-placeholder {
     color: black;
 }
+
 #second_screen{
     text-align: center;
     color: white;
@@ -93,13 +121,13 @@ body{
     margin-bottom: 25px;
 }
 .second_screen__header__logo{
-    float: left;
+    float: right;
 }
 .second_screen__header__logo_img{
     height: 100px;
 }
 .second_screen__header__text{
-    float: right;
+    float: left;
     text-align: left;
     font-size: 18px;
     margin-top: 20px;
@@ -263,6 +291,7 @@ body{
 }
 
 .fourth_screen__card_header{
+    margin-top: 10px;
     min-height: 50px;
     background-color: #fcfefe;
     text-align: center;
@@ -354,32 +383,28 @@ body{
     margin-top: 30px;
 }
 .fifth_screen__footer__img{
-    float: left;
+    float: right;
 }
 .fifth_screen__footer__img img{
     height: 100px;
 }
-.fifth_screen__footer__main{
+.fifth_screen__footer__text{
     margin-left: 20px;
     margin-top: 30px;
     float: left;
 }
-.fifth_screen__footer__sub{
-    margin-left: 20px;
-    float: left;
-}
 #first_screen .container{
     margin-top: 50px;
-    min-height: 550px;
+    padding-bottom: 40px;
 }
 #second_screen .container{
-    min-height: 570px;
+    min-height: 500px;
 }
 #third_screen .container{
-    min-height: 570px;
+    min-height: 500px;
 }
 #fourth_screen .container{
-    min-height: 570px;
+    min-height: 500px;
 }
 #fifth_screen{
     background-color: #151516;
