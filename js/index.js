@@ -2,6 +2,13 @@
  * Created by sp41mer on 04.10.16.
  */
 $(document).ready(function(){
+    //открываем первую шнягу
+    var firstLoadOpening = $(".fivesteps_header[data-number='1']");
+    $(".fivesteps__boots__img__circle[data-number='1']").attr('src','img/circles/1 1.png');
+    firstLoadOpening.parent().find(".fivesteps_info").show();
+    firstLoadOpening.find(".fivesteps_header__span").addClass('fivesteps_header__span__active');
+    firstLoadOpening.find(".fivesteps_header__img").attr("src",'img/screen3_answer.png');
+
     $(".fivesteps_header").click(function(){
         var number = $(this).data('number');
         //вот тут всем картинкам тащим версию без кружочка - ГАВНОКОД :(
@@ -9,6 +16,7 @@ $(document).ready(function(){
         $.each(oldpictures, function(el){
             $(this).attr('src','img/circles/'+$(this).data('number')+'.png');
         });
+        //потом с кружочком
         $(".fivesteps__boots__img__circle[data-number='" + number + "']").attr('src','img/circles/'+number+' 1.png');
         //возвращаем все назад
         $(".fivesteps_header__span").removeClass('fivesteps_header__span__active');

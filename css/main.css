@@ -12,6 +12,13 @@ body{
     padding: 7px 12px !important;
     background-color: #fcfefe;
 }
+.genuino__big_button__call{
+    background: none;
+    padding: 1px 25px !important;
+    color: white;
+    border: 1px solid white !important;
+    font-size: 12px !important;
+}
 .genuino__small_button{
     color: black;
     font-size: 16px !important;
@@ -34,7 +41,13 @@ body{
 
     }
 }
-
+.about_us__div_first_p{
+    margin-top: 20px;
+}
+.about_us__text p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
 .first_screen__aboutus__list {
     list-style: none;
 }
@@ -47,7 +60,10 @@ body{
 .aboutus__row{
     position: relative;
 }
+.aboutus__div__list__header{
+    font-size: 16px;
 
+}
 .about_us__CTA{
 }
 @media (max-width: 998px){
